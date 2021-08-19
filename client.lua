@@ -48,7 +48,7 @@ AddEventHandler("walkingmansign:client:Target", function()
 end)
 
 RegisterNetEvent("dontblockintersectionsign:client:Target")
-AddEventHandler("dontblockintersection:client:Target", function()
+AddEventHandler("dontblockintersectionsign:client:Target", function()
     local coords = GetEntityCoords(PlayerPedId())
     local obj = GetClosestObjectOfType(coords.x, coords.y, coords.z, 10.0, 1191039009, false, false, false)
     SetEntityAsMissionEntity(obj, true, true)
