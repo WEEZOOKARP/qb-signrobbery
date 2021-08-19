@@ -19,3 +19,12 @@ AddEventHandler("walkingmansign:server:additem", function()
 	xPlayer.Functions.AddItem("walkingmansign", 1, false)
 	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['walkingmansign'], "add")
 end)
+
+RegisterNetEvent("dontblockintersectionsign:server:additem")
+AddEventHandler("dontblockintersectionsign:server:additem", function()
+    local src = source
+    local xPlayer = QBCore.Functions.GetPlayer(tonumber(src))
+
+	xPlayer.Functions.AddItem("dontblockintersectionsign", 1, false)
+	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['dontblockintersectionsign'], "add")
+end)
