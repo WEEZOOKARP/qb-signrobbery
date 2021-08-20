@@ -28,3 +28,12 @@ AddEventHandler("dontblockintersectionsign:server:additem", function()
 	xPlayer.Functions.AddItem("dontblockintersectionsign", 1, false)
 	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['dontblockintersectionsign'], "add")
 end)
+
+RegisterNetEvent("uturnsign:server:additem")
+AddEventHandler("uturnsign:server:additem", function()
+    local src = source
+    local xPlayer = QBCore.Functions.GetPlayer(tonumber(src))
+
+	xPlayer.Functions.AddItem("uturnsign", 1, false)
+	TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['uturnsign'], "add")
+end)
