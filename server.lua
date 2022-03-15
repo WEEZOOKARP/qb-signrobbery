@@ -1,6 +1,4 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterNetEvent("stopsign:server:additem")
 AddEventHandler("stopsign:server:additem", function()
